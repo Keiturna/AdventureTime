@@ -8,6 +8,8 @@ h1{
 	margin-bottom:20px;
 	font-family: 'Rozha One', serif;
 	font-weight:100;
+
+	transition:color 250ms ease;
 	
 }
 .centred{
@@ -19,9 +21,19 @@ h1{
 	display:grid;
 	width:100%;
 	grid-template-columns:50% 1fr;
+	transition:all 250ms ease-in-out;
+
+	grid-template-areas:
+		"bmo finn"
+		"jake marceline"
+		"rainicorn chewinggum"
+		"pdesflammes lumpyspace" 
+		"rdg rdg"
+		;
 }
 
 .character{
+	transition:all 500ms ease;
 	padding:10px;
 	font-family: 'Gloria Hallelujah','Open Sans', sans-serif;
 	
@@ -40,48 +52,164 @@ h1{
 #BMO{
 	background-color:#BAE0CD;
 	border:2px solid #23B1A5;
+
+	grid-area:bmo;
 }
 
 #Finn{
 	background-color:#00ADE3;
 	border:2px solid #FFFFFF;
+
+	grid-area:finn;
 }
 
 #Jake{
 	background-color:#FCB823;
 	border:2px solid #FCB823;
+
+	grid-area:jake;
 }
 
 #Marceline{
 	background-color:#EEF1F3;
 	border:2px solid #020306;
+
+	grid-area:marceline;
 }
 
 #LadyRainicorn{
 	background-color:#E0ABCE;
 	border:2px solid #F8F390;
+
+	grid-area:rainicorn;
 }
 
 #PrincesseChewingGum{
 	background-color:#E7CEE3;
 	border:2px solid #F299BF;
+
+	grid-area:chewinggum;
 }
 
 #PrincesseDesFlammes{
 	background-color:#FFA300;
 	border:2px solid #FF410B;
+
+	grid-area:pdesflammes;
 }
 
 #PrincesseLumpySpace{
 	background-color:#BB9DC8;
 	border:2px solid #FFDF74;
+
+	grid-area:lumpyspace;
 }
 
 #RoiDesGlaces{
 	background-color:#A3D8F5;
 	border:2px solid #0072BC;
+
+	grid-area:rdg;
 }
 
 
+/* Media Queries */
+@media only screen and (max-width: 1280px){
+	h1{
+		color:orange;
+	}
+
+	.character{
+		border-radius:25px;
+	}
+
+	.page{
+		grid-template-columns:50%;
+		grid-template-areas:
+		"bmo finn"
+		"jake marceline"
+		"rainicorn chewinggum"
+		"pdesflammes lumpyspace" 
+		"rdg rdg"
+		;
+	}
+
+}
+
+@media only screen and (max-width: 1024px){
+	h1{
+		color:pink;
+	}
+
+	.page{
+		grid-template-columns:100%;
+		grid-template-areas:
+		"bmo" 
+		"finn"
+		"jake" 
+		"marceline"
+		"rainicorn" 
+		"chewinggum"
+		"pdesflammes" 
+		"lumpyspace" 
+		"rdg"
+		;
+	}
+
+
+}
+
+@media only screen and (max-width: 768px){
+	h1{
+		color:yellow;
+	}
+
+	.page{
+		grid-template-columns:33% 3fr;
+		grid-template-areas:
+		"bmo finn jake"
+		"marceline rainicorn jake"
+		"pdesflammes pdesflammes chewinggum"
+		"lumpyspace rdg rdg"
+		;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	h1{
+		color:purple;
+	}
+
+	.page{
+		grid-template-columns:33% 3fr;
+		grid-template-areas:
+		"bmo finn jake"
+		"marceline rainicorn chewinggum"
+		"pdesflammes lumpyspace rdg"
+		;
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	h1{
+		color:green;
+	}
+
+	.character{
+		border-radius:50px;
+	}
+
+	.page{
+		
+
+		grid-template-columns:100%;
+		grid-template-areas:
+		"bmo" "finn" "jake" "marceline"
+		"rainicorn" "chewinggum"
+		"pdesflammes" "lumpyspace" "rdg"
+		;
+	}
+}
 
 
