@@ -1,0 +1,87 @@
+*,html{
+	margin:0;
+	padding:0;
+}
+h1{
+	color:red;
+	text-decoration: underline;
+	margin-bottom:20px;
+	font-family: 'Rozha One', serif;
+	font-weight:100;
+	
+}
+.centred{
+	text-align: center;
+}
+
+.page{
+	
+	display:grid;
+	width:100%;
+	grid-template-columns:50% 1fr;
+}
+
+.character{
+	padding:10px;
+	font-family: 'Gloria Hallelujah','Open Sans', sans-serif;
+	
+}
+
+.character:hover img{
+	transform:rotate(360deg);
+}
+
+.character img{
+	height:100px;
+	width:auto;
+	transition: 500ms transform linear;
+}
+
+#BMO{
+	background-color:#BAE0CD;
+	border:2px solid #23B1A5;
+}
+
+#Finn{
+	background-color:#00ADE3;
+	border:2px solid #FFFFFF;
+}
+
+#Jake{
+	background-color:#FCB823;
+	border:2px solid #FCB823;
+}
+
+#Marceline{
+	background-color:#EEF1F3;
+	border:2px solid #020306;
+}
+
+#LadyRainicorn{
+	background-color:#E0ABCE;
+	border:2px solid #F8F390;
+}
+
+#PrincesseChewingGum{
+	background-color:#E7CEE3;
+	border:2px solid #F299BF;
+}
+
+#PrincesseDesFlammes{
+	background-color:#FFA300;
+	border:2px solid #FF410B;
+}
+
+#PrincesseLumpySpace{
+	background-color:#BB9DC8;
+	border:2px solid #FFDF74;
+}
+
+#RoiDesGlaces{
+	background-color:#A3D8F5;
+	border:2px solid #0072BC;
+}
+
+
+
+
