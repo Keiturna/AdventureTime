@@ -39,6 +39,12 @@ h1{
 	
 }
 
+.character:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	z-index:30;
+	border-radius:30px;
+}
+
 .character:hover img{
 	transform:rotate(360deg);
 }
@@ -65,7 +71,7 @@ h1{
 
 #Jake{
 	background-color:#FCB823;
-	border:2px solid #FCB823;
+	border:2px solid #e4a926;
 
 	grid-area:jake;
 }
@@ -197,7 +203,8 @@ h1{
 	}
 
 	.character{
-		border-radius:50px;
+		border-radius:50%;
+		height:width;
 	}
 
 	.page{
