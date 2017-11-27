@@ -1,5 +1,5 @@
 # AdventureTime
-School work - Adventure Time Characters with Grid Layout
+School work - Adventure Time Characters with Grid Layout<br>
 [Lien vers l'aperçu](https://keiturna.github.io/AdventureTime/)<br>
 
 
